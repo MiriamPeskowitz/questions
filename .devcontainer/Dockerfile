@@ -13,7 +13,5 @@ RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSI
 # RUN gem install <your-gem-names-here>
 RUN gem install bundler:2.1.4
 
-RUN bundle install
-
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
