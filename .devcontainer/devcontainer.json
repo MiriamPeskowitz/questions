@@ -25,7 +25,7 @@
 	"forwardPorts": [3000, 3035],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "ruby --version",
+	"postCreateCommand": "bundle install",
 
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"
