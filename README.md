@@ -7,6 +7,15 @@
 * `docker-compose run web yarn`
 * `docker-compose up`
 
+**Setup Using Visual Studio Code**
+
+1. Open project directory in VS Code
+1. Press F1, and select `Remote-Containers: Reopen in Container...`
+1. Wait a few minutes as it pulls image down and builds Dev Conatiner Docker image (this should only need to happen once unless you modify the Dockerfile)
+    1. You can see progress of the build by clicking `Starting Dev Container (show log): Building image` that appears in bottom right corner
+1. Once complete VS Code will connect your running Dev Container and will feel like your doing local development
+1. If you would like more information about VS Code Dev Containers check out the [dev container documentation](https://code.visualstudio.com/docs/remote/create-dev-container/?WT.mc_id=AZ-MVP-5003399)
+
 **Activity**
 
 You can create new questions at `http://localhost:3000`.
