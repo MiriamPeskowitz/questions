@@ -24,10 +24,8 @@ WORKDIR /myapp
 
 RUN gem install bundler
 
-ADD Gemfile /myapp/Gemfile
-ADD Gemfile.lock /myapp/Gemfile.lock
-ADD package.json /myapp/package.json
-ADD yarn.lock /myapp/yarn.lock
+COPY Gemfile Gemfile.lock ./
+COPY package.json yarn.lock ./
 
 RUN bundle install
 RUN yarn install
