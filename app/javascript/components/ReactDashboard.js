@@ -1,26 +1,25 @@
 import React from "react";
 
 export const ReactDashboard = () => {
+
+
+  const getAllResponses  = () => {
+    fetch(`http://localhost:3000/api/v1/responses?name=Zan`)
+      .then(res => res.json())
+      .then( resp => {
+          resp.map((r) => r.response)
+      })
+  }
+
+ 
+
   return (
-    <div>
-    <h1>Dashboard</h1>
+   <p>Zan's reponses
+    { getAllResponses() }
+  </p>
+    )
 
-    <h2>Number of responses from Abraham Lincoln: </h2>
-
-    <h2>Number of responses containing the word "banana" in them: </h2>
-
-    <div className="grid">
-      <div className="column">
-        <h2>10 most recent responses</h2>
-        <div className="response-card">
-          <h3>Question Label</h3>
-          <p><strong>Responder: </strong></p>
-          <p><strong>Response: </strong></p>
-          
-        </div>
-      </div>
-
-    </div>
-    </div>
-  )
 };
+
+
+//form to take in the name 
